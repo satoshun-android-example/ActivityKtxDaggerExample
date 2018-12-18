@@ -34,9 +34,12 @@ object Libs {
   val lifecycle_compiler = "androidx.lifecycle:lifecycle-compiler:2.0.0"
   val lifecycle_extensions = "androidx.lifecycle:lifecycle-extensions:2.0.0"
 
-  private val vdagger = "2.18"
+  private val vdagger = "2.19"
   val dagger = "com.google.dagger:dagger:$vdagger"
   val dagger_processor = "com.google.dagger:dagger-compiler:$vdagger"
+  val dagger_android = "com.google.dagger:dagger-android:$vdagger"
+  val dagger_android_processor = "com.google.dagger:dagger-android-processor:$vdagger"
+  val dagger_android_support = "com.google.dagger:dagger-android-support:$vdagger"
 
   val junit = "junit:junit:4.12"
   val truth = "com.google.truth:truth:0.42"

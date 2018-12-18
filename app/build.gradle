@@ -62,6 +62,9 @@ dependencies {
 
   implementation Libs.dagger
   kapt Libs.dagger_processor
+  implementation Libs.dagger_android
+//  implementation Libs.dagger_android_support
+  kapt Libs.dagger_android_processor
 
   implementation Libs.fragmentx
   implementation Libs.activityx

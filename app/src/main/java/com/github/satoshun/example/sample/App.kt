@@ -1,12 +1,10 @@
 package com.github.satoshun.example.sample
 
-import android.app.Application
+import dagger.android.AndroidInjector
+import dagger.android.DaggerApplication
 
-class App : Application() {
-  lateinit var appComponent: AppComponent
-
-  override fun onCreate() {
-    super.onCreate()
-    appComponent = DaggerAppComponent.create()
+class App : DaggerApplication() {
+  override fun applicationInjector(): AndroidInjector<out DaggerApplication> {
+    return DaggerAppComponent.create()
   }
 }
