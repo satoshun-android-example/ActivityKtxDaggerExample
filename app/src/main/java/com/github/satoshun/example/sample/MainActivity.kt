@@ -1,6 +1,7 @@
 package com.github.satoshun.example.sample
 
 import android.os.Bundle
+import androidx.activity.viewModels
 import androidx.databinding.DataBindingUtil
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.Observer
@@ -17,7 +18,7 @@ import javax.inject.Inject
 class MainActivity : BaseActivity() {
   @Inject lateinit var factory: ViewModelFactory<MainViewModel>
 
-  private val viewModel: MainViewModel by viewModels(factory)
+  private val viewModel: MainViewModel by viewModels { factory }
 
   override fun onCreate(savedInstanceState: Bundle?) {
     AndroidInjection.inject(this)

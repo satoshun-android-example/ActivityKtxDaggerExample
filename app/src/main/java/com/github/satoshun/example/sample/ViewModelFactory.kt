@@ -1,8 +1,5 @@
 package com.github.satoshun.example.sample
 
-import androidx.activity.ComponentActivity
-import androidx.activity.viewModels
-import androidx.annotation.MainThread
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import javax.inject.Inject
@@ -15,11 +12,4 @@ class ViewModelFactory<VM : ViewModel> @Inject constructor(
     @Suppress("UNCHECKED_CAST")
     return viewModel.get() as T
   }
-}
-
-@MainThread
-inline fun <reified VM : ViewModel> ComponentActivity.viewModels(
-  factory: ViewModelFactory<VM>
-): Lazy<VM> {
-  return viewModels(factoryProducer = { factory })
 }
