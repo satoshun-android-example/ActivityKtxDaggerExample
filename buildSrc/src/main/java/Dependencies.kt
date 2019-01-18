@@ -8,7 +8,7 @@ object Vers {
 }
 
 object Libs {
-  val android_plugin = "com.android.tools.build:gradle:3.4.0-alpha10"
+  val android_plugin = "com.android.tools.build:gradle:3.4.0-beta01"
   val kotlin_plugin = "org.jetbrains.kotlin:kotlin-gradle-plugin:${Vers.kotlin}"
   val versions_plugin = "com.github.ben-manes:gradle-versions-plugin:0.20.0"
 
@@ -16,11 +16,11 @@ object Libs {
   val coroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-core:${Vers.couroutine}"
   val ui_coroutine = "org.jetbrains.kotlinx:kotlinx-coroutines-android:${Vers.couroutine}"
 
-  val ktx = "androidx.core:core-ktx:1.0.0"
+  val ktx = "androidx.core:core-ktx:1.0.1"
 
   val appcompat = "androidx.appcompat:appcompat:1.0.2"
   val recyclerview = "androidx.recyclerview:recyclerview:1.0.0"
-  val constraintlayout = "androidx.constraintlayout:constraintlayout:2.0.0-alpha2"
+  val constraintlayout = "androidx.constraintlayout:constraintlayout:2.0.0-alpha3"
   val cardview = "androidx.cardview:cardview:1.0.0"
 
   val activityx = "androidx.activity:activity-ktx:1.0.0-alpha03"
@@ -34,7 +34,7 @@ object Libs {
   val lifecycle_compiler = "androidx.lifecycle:lifecycle-compiler:2.0.0"
   val lifecycle_extensions = "androidx.lifecycle:lifecycle-extensions:2.0.0"
 
-  private val vdagger = "2.20"
+  private val vdagger = "2.21"
   val dagger = "com.google.dagger:dagger:$vdagger"
   val dagger_processor = "com.google.dagger:dagger-compiler:$vdagger"
   val dagger_android = "com.google.dagger:dagger-android:$vdagger"
